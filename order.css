@@ -1,0 +1,117 @@
+body{
+    background-color: aliceblue;
+}
+#order {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #order h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  #orderForm {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  #orderForm input[type="checkbox"] {
+    margin: 10px 10px 10px 0;
+  }
+  
+  #orderForm input[type="submit"] {
+    width: 20%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .item {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    margin: 10px;
+  }
+  #order .container div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+ 
+  
+  #order .container label {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #order .container input[value="Rice"]:checked + label {
+    background-image: url(rice.jpg);
+  }
+  
+  #order .container input[value="Dal"]:checked + label {
+    background-image: url(dal.jpg);
+  }
+  
+  #order .container input[value="Wheat Flour"]:checked + label {
+    background-image: url(wheat_flour.jpg);
+  }
+  
+  #order .container input[value="Rice Flour"]:checked + label {
+    background-image: url(rice_flour.jpg);
+  }
+  
+  #order .container input[value="Oil"]:checked + label {
+    background-image: url(oil.jpg);
+  }
+  
+  #order .container input[value="Sugar/Jaggery"]:checked + label {
+    background-image: url(sugar.jpg);
+  }
+  
+  #order .container input[value="Salt"]:checked + label {
+    background-image: url(salt.jpg);
+  }
+  
+  #order .container input[value="Khada Masalas"]:checked + label {
+    background-image: url(khada_masalas.jpg);
+  }
+  
+  #order .container input[value="Powdered Masalas"]:checked + label {
+    background-image: url(powdered_masalas.jpg);
+  }
+  
+  #order .container input[value="Onions"]:checked + label {
+    background-image: url(onions.jpg);
+  }
+  
+  #order .container input[value="Potatoes"]:checked + label {
+    background-image: url(potatoes.jpg);
+  }
+  
+  #order .container input[value="Tea/Coffee"]:checked + label {
+    background-image: url(tea.jpg);
+  }
+  
+  #order .container input[value="Snacks"]:checked + label {
+    background-image: url(snacks.jpg);
+  }
+    

@@ -1,0 +1,333 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    background-color: #12e85286;
+    padding: 15px;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: #0c0101;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  header nav ul li a:hover {
+    color: #eaa7a7;
+  }
+  
+
+  
+  #showcase {
+    background-image: url('pic1.jpg');
+    background-size: cover;
+    height: 450px;
+    text-align: center;
+    color: #070006fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+  }
+  
+  #showcase h1 {
+    font-size: 80px;
+    margin: 0;
+    animation: slide-in-left 2s ease-out;
+  }
+  
+  #showcase p {
+    font-size: 40px;
+    margin: 0;
+    animation: slide-in-right 2s ease-out;
+  }
+  
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  
+  #services {
+    background-image: url('pic2.jpg');
+    background-color: #f2f2f2;
+    padding: 75px 0;
+    text-align: center;
+  }
+  
+  #services h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  #services ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #services li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    width: 300px;
+    margin: 40px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #services li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 200px;
+    margin-bottom: 16px;
+  }
+
+  /* Style the selected option */
+  option:checked {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  /* Style the option elements */
+  option {
+    padding: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  button#search-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #grocery-stores {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  #grocery-stores div {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+
+  #store-section {
+    margin-top: 20px;
+  }
+  
+  #store-section label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #store-section input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  #store-section select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+
+  .container {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  input[type="button"] {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  #login {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #deecd8;
+  }
+  
+  #login label {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+    padding-right: 10px;
+  }
+  
+  #login input[type="text"], #login input[type="password"] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #login input[type="submit"] {
+    width: 10%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }  
+
+  #register-btn {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  #register-btn input[type="button"] {
+    width: 100px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  
+  #order {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+  }
+  
+  
+  
+  #contact {
+    background-color: #c7dec8;
+    padding: 50px 0;
+  }
+  
+  #contact .container {
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+  
+  #contact p {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  
+ 
+  
+  #contact i {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  #contact p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+    
